@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  background-image: radial-gradient(circle at 20% 20%, rgba(255, 179, 142, 0.08), transparent 35%),
+    radial-gradient(circle at 80% 10%, rgba(254, 246, 228, 0.08), transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(90, 107, 122, 0.18), transparent 45%);
+}
+
+a {
+  @apply text-peach transition-colors hover:text-cream;
+}
+
+.glass-panel {
+  background: rgba(12, 20, 32, 0.8);
+  border: 1px solid rgba(255, 179, 142, 0.2);
+  box-shadow: 0 24px 48px -32px rgba(0, 0, 0, 0.7);
+}
